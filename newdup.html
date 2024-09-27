@@ -1,0 +1,1255 @@
+<html>
+  <head>
+    <title ng-bind="pageTitle" >Skilledity</title>
+    <link
+      href="nodmod.css"
+      rel="stylesheet"
+    />
+    <link
+      href="landind.css"
+      rel="stylesheet"
+    />
+    <link
+      href="style.css"
+      rel="stylesheet"
+    />
+    <link
+      href="custom.css"
+      rel="stylesheet"
+    />
+    
+
+    <base href="" />
+  </head>
+  <body
+    class="md-skin top-navigation body-small"
+    id="page-top"
+    style="overflow: scroll; overflow-x: hidden"
+  >
+    <!-- uiView: -->
+    <div ui-view="">
+      <style>
+        .nav-shadow {
+          height: 1px;
+          background-color: rgba(255, 255, 255, 0.15);
+          box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.2);
+        }
+        .nav-header {
+          list-style: none;
+          background: 0 0;
+          padding-left: 0;
+          padding-top: 10px;
+          padding: 18px 0;
+        }
+        .m-t-b-20 {
+          margin-top: 20px;
+          margin-bottom: 20px;
+        }
+        .nav-header .close-view-img {
+          display: none;
+        }
+        ul.row.nav.navbar-top-links.navbar-right.contents-2 {
+          display: none;
+        }
+        .nav-header a {
+          text-decoration: none;
+        }
+        .navbar.navbar-fixed-top {
+          margin-bottom: 0;
+        }
+        ul.nav.navbar-top-links.navbar-right {
+          margin-right: 0;
+        }
+        ul.row.nav.navbar-top-links.navbar-right.contents-2 {
+          display: none;
+        }
+        .md-skin.top-navigation .nav.navbar-right > li > a {
+          color: #fff;
+          opacity: 0.5;
+          padding-right: 40px;
+          padding-left: 0;
+          transition: all 0.3s ease;
+        }
+        .md-skin.top-navigation .nav.navbar-right > li > a:hover {
+          opacity: 1;
+        }
+        .md-skin.top-navigation .nav.navbar-right > li > a > img {
+          display: none;
+        }
+        ul.nav.navbar-top-links.navbar-right li .btn {
+          padding: 6px 20px;
+          color: #eaf0fa;
+          background: rgba(225, 225, 225, 0.1);
+          box-shadow: none;
+          margin-right: 5px;
+          font-size: 13px;
+          margin-top: -1px;
+          transition: all 0.2s;
+        }
+        ul.nav.navbar-top-links.navbar-right li .btn:hover {
+          color: #1769cd;
+          background: #fff;
+          box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.1);
+          cursor: pointer;
+          transition: all 0.2s;
+        }
+        ul.nav.navbar-top-links.navbar-right li .btn.btn3 {
+          padding: 6px 25px;
+          box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+          background-color: #fff;
+          color: #1769cd;
+          margin-right: 0;
+          font-size: 13px;
+        }
+        ul.nav.navbar-top-links.navbar-right li .btn.btn3:hover {
+          box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.1);
+          background-color: #f4f4f4;
+          cursor: pointer;
+        }
+        .navbar.navbar-fixed-top {
+          margin-bottom: 0;
+          background: 0 0;
+          color: #fff;
+          position: absolute;
+          padding-right: 40px;
+          padding-left: 40px;
+          box-shadow: none;
+        }
+        .landing-page .navbar .navbar-header .navbar-toggle {
+          position: absolute;
+        }
+        .landing-page .navbar .navbar-header .navbar-toggle img {
+          max-height: 24px;
+          max-width: 24px;
+          margin-top: 3px;
+        }
+        .landing-page .navbar .navbar-header .navbar-toggle {
+          float: left;
+          padding: 0;
+          background-color: transparent;
+          color: #fff;
+          font-size: 24px;
+          padding: 5px 0 0 20px;
+        }
+        .landing-page .navbar .navbar-header a {
+          display: block;
+          text-align: center;
+        }
+        .m-t-8 {
+          margin-top: 8px;
+        }
+        .p-l-8 {
+          padding-left: 8px;
+        }
+        .p-l-r-7-5 {
+          padding: 0 7.5px;
+        }
+        .p-l-r-30 {
+          padding: 0 30px;
+        }
+        #intro {
+          background: url(Untitled\ design\ 2.PNG);
+          background-size: cover;
+          background-position: center;
+          height: 670px;
+          background-blend-mode: luminosity;
+        }
+        #intro .intro-cover {
+          display: block;
+          position: absolute;
+          height: 100%;
+          overflow: hidden;
+          width: 100%;
+        }
+        .container {
+          max-width: 960px;
+          margin: 0 auto;
+          padding-left: 0;
+          padding-right: 0;
+        }
+        .landing-card-links a.primary-text-color::before {
+          position: relative;
+          top: 16px;
+          left: 60px;
+          color: transparent;
+          content: " ";
+          text-shadow: transparent 0 0;
+          font-size: 10px;
+          opacity: 0.3;
+          transform: translateX(-50%);
+          pointer-events: none;
+          transition: text-shadow 0.3s, color 0.3s;
+          -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+          transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+        }
+        .block-2 .landing-card-links a.primary-text-color::before {
+          left: 70px;
+        }
+        .block-3 .landing-card-links a.primary-text-color::before {
+          left: 40px;
+        }
+        .card,
+        .card-sec .card {
+          transition: all 0.3s ease;
+        }
+        .card-sec:hover .card:hover {
+          background-color: #fff;
+          mix-blend-mode: none;
+          box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.05);
+        }
+        .card:hover .landing-card-links a .chevron {
+          left: 13px;
+        }
+        .card-sec:hover .card:not(:hover) {
+          background-color: #fff;
+          mix-blend-mode: luminosity;
+        }
+        .card:hover .landing-card-links a.purple-text-color:before {
+          color: #8a26d9;
+          text-shadow: 7px 0 #8a26d9, -7px 0 #8a26d9;
+        }
+        .landing-card-links a.purple-text-color:hover {
+          color: #8a26d9;
+        }
+        .landing-card-links a.purple-text-color:focus::before,
+        .landing-card-links a.purple-text-color:hover::before {
+          color: #8a26d9;
+          text-shadow: 7px 0 #8a26d9, -7px 0 #8a26d9;
+        }
+        .card:hover .landing-card-links a.purple-text-color:before {
+          color: #8a26d9;
+          text-shadow: 7px 0 #8a26d9, -7px 0 #8a26d9;
+        }
+        .card:hover .landing-card-links a.maroon-text-color:before {
+          color: #cd373f;
+          text-shadow: 7px 0 #cd373f, -7px 0 #cd373f;
+        }
+        .landing-card-links a.maroon-text-color:hover {
+          color: #cd373f;
+        }
+        .landing-card-links a.maroon-text-color:hover::before,
+        .landing-card-links a.purple-text-color:focus::before {
+          color: #cd373f;
+          text-shadow: 7px 0 #cd373f, -7px 0 #cd373f;
+        }
+        .btn-primary-nav {
+          border: none;
+          background: rgba(255, 255, 255, 0.1);
+          padding: 6px 20px;
+          border-radius: 3px;
+          font-size: 13px;
+          color: #fff;
+          font-weight: 700;
+          transition: all 0.2s;
+          margin-top: 10px;
+          margin-left: 10px;
+        }
+        .btn-primary-nav:hover {
+          color: #1769cd;
+          background: #fff;
+          box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.1);
+          cursor: pointer;
+        }
+        .landing-card-links a::before {
+          position: relative;
+          top: 16px;
+          left: 40px;
+          color: transparent;
+          content: "";
+          text-shadow: transparent 0 0;
+          font-size: 10px;
+          opacity: 0.3;
+          transform: translateX(-50%);
+          pointer-events: none;
+          transition: text-shadow 0.3s, color 0.3s;
+          -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+          transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+        }
+        .signup-shadow-box {
+          width: 303px;
+          height: 300px;
+          border-radius: 4px;
+          -webkit-filter: blur(20px);
+          filter: blur(20px);
+          background-color: rgba(0, 0, 0, 0.3);
+          position: absolute;
+          z-index: 0;
+          left: 38px;
+          top: 30px;
+        }
+        .signup-card-container {
+          position: relative;
+          z-index: 1;
+        }
+        .seperator {
+          width: 2px;
+          height: 16px;
+          border-radius: 4px;
+          background-color: rgba(0, 0, 0, 0.1);
+        }
+        .m-t-res-testimonial {
+          margin-top: 24px;
+        }
+        .signup-card .landing-timeline-header {
+          font-size: 16px;
+        }
+        .card .landing-timeline-subtext {
+          font-size: 16px;
+        }
+        .contact-us {
+          margin-top: 80px;
+          margin-bottom: 80px;
+        }
+        .signup-card .landing-timeline-subtext {
+          font-size: 14px;
+        }
+        .m-t-150 {
+          margin-top: 150px;
+        }
+        .m-t-170 {
+          margin-top: 170px;
+        }
+        .m-t-180 {
+          margin-top: 180px;
+        }
+        .fade-scale {
+          transform: scale(0);
+          opacity: 0;
+          -webkit-transition: all 0.25s ease;
+          -o-transition: all 0.25s ease;
+          transition: all 0.25s ease;
+        }
+        .fade-scale.in {
+          opacity: 1;
+          transform: scale(1);
+        }
+        @media (max-width: 750px) {
+          .hover-banner {
+            display: none !important;
+          }
+          .p-100 {
+            padding: 40px;
+          }
+          .signup-card .landing-timeline-subtext {
+            font-size: 16px;
+          }
+          .nav-header {
+            padding: 16px 0;
+          }
+          .navbar-collapse {
+            background: #fff;
+          }
+          .md-skin.top-navigation .nav.navbar-right > li > a {
+            opacity: 1;
+            padding: 16px 20px;
+          }
+          .md-skin.top-navigation .nav.navbar-right > li > a > img {
+            display: inline-block;
+            width: 40px;
+            margin-right: 16px;
+          }
+          .md-skin.top-navigation .nav.navbar-right > li > a > img.chevron {
+            height: 5.75px;
+            object-fit: contain;
+            margin-top: 18px;
+          }
+          .md-skin.top-navigation .nav.navbar-right > li > a > span {
+            opacity: 0.5;
+            font-size: 14px;
+            font-weight: 500;
+            text-align: left;
+            color: #122e46;
+          }
+          .md-skin .navbar-top-links li {
+            border-bottom: 1px solid #ebeef1;
+          }
+          ul.row.nav.navbar-top-links.n avbar-right.contents-2 {
+            display: block;
+            margin-right: -15px;
+          }
+          ul.nav.navbar-top-links.navbar-right.contents-1 li:nth-child(2) {
+            border-bottom: 0;
+          }
+          ul.nav.navbar-top-links.navbar-right.contents-1 li:nth-child(3),
+          ul.nav.navbar-top-links.navbar-right.contents-1 li:nth-child(4) {
+            display: none;
+          }
+          ul.row.nav.navbar-top-links.navbar-right.contents-2 {
+            background-color: #f6f7f8;
+            padding-bottom: 20px;
+          }
+          ul.row.nav.navbar-top-links.navbar-right.contents-2 li {
+            padding: 20px 15px;
+            padding-bottom: 0;
+            border-bottom: 0;
+          }
+          ul.row.nav.navbar-top-links.navbar-right.contents-2 li .btn {
+            background-color: #3088f4;
+            box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.1);
+            padding-top: 12px;
+            padding-bottom: 12px;
+            width: 100%;
+            font-size: 14px;
+            font-weight: 700;
+            color: #fff;
+          }
+          ul.row.nav.navbar-top-links.navbar-right.contents-2 li .btn2 {
+            background-color: #e3e7ea;
+            opacity: 0.5;
+            font-size: 14px;
+            font-weight: 700;
+            text-align: center;
+            color: #122e46;
+          }
+          .landing-page .navbar .navbar-header .navbar-toggle {
+            position: absolute;
+          }
+          .landing-page .navbar .navbar-header .navbar-toggle img {
+            max-height: 24px;
+            max-width: 24px;
+            margin-top: 3px;
+          }
+          .landing-page .navbar .navbar-header .navbar-toggle .normal-view-img {
+            display: none;
+          }
+          .landing-page .navbar .navbar-header .navbar-toggle .close-view-img {
+            display: block;
+          }
+          .landing-page
+            .navbar
+            .navbar-header
+            .navbar-toggle.collapsed
+            .normal-view-img {
+            display: block;
+          }
+          .landing-page
+            .navbar
+            .navbar-header
+            .navbar-toggle.collapsed
+            .close-view-img {
+            display: none;
+          }
+          .landing-page
+            .navbar
+            .navbar-header
+            .navbar-toggle
+            + .nav-header
+            .normal-view-img {
+            display: none;
+          }
+          .landing-page
+            .navbar
+            .navbar-header
+            .navbar-toggle
+            + .nav-header
+            .close-view-img {
+            display: inline-block;
+          }
+          .landing-page
+            .navbar
+            .navbar-header
+            .navbar-toggle.collapsed
+            + .nav-header
+            .normal-view-img {
+            display: inline-block;
+          }
+          .landing-page
+            .navbar
+            .navbar-header
+            .navbar-toggle.collapsed
+            + .nav-header
+            .close-view-img {
+            display: none;
+          }
+          .landing-page .navbar .navbar-header .navbar-toggle + .nav-header {
+            background: #fff;
+          }
+          .landing-page
+            .navbar
+            .navbar-header
+            .navbar-toggle.collapsed
+            + .nav-header {
+            background: 0 0;
+          }
+          .nav-header {
+            padding: 16px 0;
+          }
+          .navbar.navbar-fixed-top {
+            padding-right: 0;
+            padding-left: 0;
+          }
+          .landing-page .navbar .navbar-header .navbar-toggle {
+            float: left;
+            padding: 0;
+            background-color: transparent;
+            color: #fff;
+            font-size: 24px;
+            padding: 5px 0 0 20px;
+          }
+          .landing-page .navbar .navbar-header a {
+            display: block;
+            text-align: center;
+          }
+          .footer-link-seperator {
+            font-weight: 500;
+            font-size: 14px;
+            opacity: 0.4;
+          }
+          #footer-section a {
+            display: inline-block;
+          }
+          .footer-group {
+            margin: 0;
+          }
+          .footer-plaintext {
+            opacity: 0.2;
+            font-size: 10px;
+            font-weight: 500;
+            color: #122e46;
+          }
+          .signup-card .landing-timeline-header {
+            font-size: 13px;
+            text-align: center;
+          }
+          .signup-shadow-box {
+            width: 236px;
+            height: 300px;
+            border-radius: 4px;
+            -webkit-filter: blur(20px);
+            filter: blur(20px);
+            background-color: rgba(0, 0, 0, 0.3);
+            position: absolute;
+            left: 20px;
+            z-index: 0;
+          }
+          .card .landing-timeline-subtext {
+            font-size: 14px;
+          }
+          .m-t-80 {
+            margin-top: 40px;
+          }
+          .gray-bg.dashbard-1 > .row {
+            margin: 0;
+          }
+          .container {
+            padding-right: 0;
+            padding-left: 0;
+          }
+          #intro .filter .container .row {
+            margin: 0;
+          }
+          .filler-content {
+            padding: 80px 40px;
+          }
+          .navbar.navbar-fixed-top {
+            padding-right: 0;
+            padding-left: 0;
+          }
+          .container {
+            padding-left: 20px;
+            padding-right: 20px;
+          }
+          .container .row {
+            margin-left: -15px;
+            margin-right: -15px;
+          }
+          .landing-page .navbar .navbar-header .navbar-toggle {
+            float: left;
+            padding: 0;
+            background-color: transparent;
+            color: #fff;
+            font-size: 24px;
+            padding: 5px 0 0 20px;
+          }
+          .landing-page .navbar .navbar-header a {
+            display: block;
+            text-align: center;
+          }
+          .my-head {
+            margin-top: 170px;
+          }
+          .biggest-subtext {
+            margin-top: 8px;
+            margin-bottom: 90px;
+          }
+          .my-head .btn-white-landing {
+            border-radius: 3px;
+            background-color: #fff;
+            box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.15),
+              0 2px 4px 0 rgba(0, 0, 0, 0.08);
+            padding-top: 12px;
+            padding-bottom: 14px;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 1;
+            text-align: center;
+            color: #1769cd;
+          }
+          .my-head .header-link a {
+            opacity: 0.5;
+            font-family: Quicksand;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 1.17;
+            text-align: center;
+            color: #fff;
+          }
+          .my-head .header-link a img {
+            width: 4px;
+            height: 6px;
+            margin-left: 5px;
+          }
+          .landing-text-light {
+            font-size: 10px;
+          }
+          .landing-text-header {
+            font-size: 16px;
+            margin-top: 4px;
+          }
+          .landing-subtext {
+            font-size: 12px;
+            margin-top: 8px;
+          }
+          .clients-wrapper .landing-text-light {
+            font-size: 10px;
+          }
+          .clients-wrapper .mob-sec {
+            margin-top: 4px;
+            padding-left: 0;
+            padding-right: 0;
+          }
+          .clients-wrapper img {
+            height: 33px;
+            width: auto;
+            margin-top: 12px;
+          }
+          .features-content .row {
+            margin: 0;
+          }
+          .features-content .m-t-80 {
+            margin-top: 40px;
+          }
+          .features-content .block-1,
+          .features-content .block-2,
+          .features-content .block-3 {
+            margin-top: 0;
+          }
+          .features-content .landing-text-light {
+            font-size: 10px;
+          }
+          .features-content .landing-text-header {
+            font-size: 16px;
+            margin-top: 4px;
+          }
+          .features-content .landing-subtext {
+            font-size: 14px;
+            margin-top: 8px;
+          }
+          .features-content .landing-card-links {
+            margin-top: 20px;
+            font-size: 11px;
+            margin-bottom: 48px;
+          }
+          .how-it-works img {
+            margin-bottom: 16px;
+          }
+          .how-it-works .block-img-1 {
+            height: 132px;
+          }
+          .how-it-works .block-img-2 {
+            height: 169.5px;
+          }
+          .how-it-works .block-img-3 {
+            height: 141.5px;
+          }
+          .how-it-works .block-img-4 {
+            height: 142.5px;
+          }
+          .how-it-works .landing-timeline-subtext {
+            opacity: 0.4;
+            font-size: 14px;
+            font-weight: 500;
+            text-align: center;
+            color: #122e46;
+            margin-bottom: 44px;
+          }
+          .how-it-works .m-b-xl {
+            margin-bottom: 60px;
+          }
+          .community-sec .p-sm {
+            padding: 12px;
+          }
+          .community-sec img {
+            height: 36px;
+          }
+          .community-sec .landing-text-sm {
+            font-size: 14px;
+          }
+          .community-sec .landing-timeline-subtext {
+            font-size: 12px;
+            margin-top: 2.5px;
+          }
+          .community-sec .m-b-lg {
+            margin-bottom: 40px;
+          }
+          .testimonials-sec {
+            margin-top: 0;
+          }
+          .carousel-indicators {
+            top: auto !important;
+            bottom: 20;
+          }
+          .testimonial-content {
+            font-size: 14px;
+          }
+          .testimonial-header {
+            font-size: 14px;
+          }
+          .testimonial-subcontent {
+            font-size: 13px;
+            margin-bottom: 50px;
+          }
+          .blockquote_override {
+            padding: 0;
+            margin-bottom: 30px;
+          }
+          .landing-page .carousel,
+          .landing-page .carousel .item {
+            height: 420px;
+          }
+          .large-text-lt {
+            font-size: 18px;
+            margin-top: 46px;
+          }
+          .subtext-lt {
+            font-size: 14px;
+            margin-top: 16px;
+          }
+          .mob-signup-card {
+            padding: 0;
+          }
+          .mob-signup-card .m-t-60 {
+            margin-top: 36px;
+          }
+          .mob-signup-card .m-b-80 {
+            margin-bottom: 51px;
+          }
+          .intro-height,
+          .signup-filter .container {
+            height: auto !important;
+          }
+          .signup-filter .row {
+            margin: 0;
+          }
+          .contact-us {
+            margin-top: 48px;
+            margin-bottom: 60px;
+          }
+          .contact-us .landing-timeline-subtext {
+            font-size: 12px;
+            margin-top: 8px;
+          }
+          .contact-us .btn-primary-landing {
+            margin-top: 24px;
+            font-size: 12px;
+            padding-top: 11.5px;
+            padding-bottom: 13.5px;
+          }
+          .card-sec {
+            margin-left: 0;
+            margin-right: 0;
+          }
+        }
+        .md-skin.top-navigation .nav.navbar-right > li > a {
+          color: #fff;
+          opacity: 0.5;
+          padding-right: 40px;
+          padding-left: 0;
+          transition: all 0.3s ease;
+        }
+        @keyframes hoverActivityBannerUp {
+          from {
+            bottom: -310px;
+          }
+          to {
+            bottom: 0;
+          }
+        }
+        @keyframes hoverActivityBannerDown {
+          from {
+            bottom: 0;
+          }
+          to {
+            bottom: -310px;
+          }
+        }
+        .hover-banner {
+          z-index: 10000;
+          display: flex;
+          position: fixed;
+          bottom: 0;
+          background-color: #fff;
+          padding: 1%;
+          animation-name: hoverActivityBannerUp;
+          animation-duration: 2s;
+          transform: translateY(0);
+          animation-iteration-count: 1;
+          box-shadow: 1px -2px 35px #9cb0b957;
+        }
+        .hover-banner img {
+          width: 100%;
+          background-size: 100%;
+        }
+        .hover-banner .hover-banner-button-icon {
+          width: 50px;
+          height: 50px;
+          position: absolute;
+          top: -80px;
+          left: 48%;
+          background-color: #fff;
+          border-radius: 15px;
+          box-shadow: 1px -2px 35px #03a9f457;
+        }
+        .hover-banner .hover-banner-button-icon:hover {
+          background-color: #eaeaea;
+        }
+      </style>
+      <div id="wrapper">
+        <div class="landing-page">
+          <section id="logindiv">
+            <div class="gray-bg dashbard-1">
+              <div class="row">
+                <!-- ngIf: !loggedIn -->
+                <div>
+                  <nav class="navbar navbar-fixed-top" role="navigation">
+                    <div class="navbar-header">
+                      <button
+                        aria-controls="navbar"
+                        aria-expanded="false"
+                        data-target="#navbar"
+                        data-toggle="collapse"
+                        class="navbar-toggle collapsed"
+                        type="button"
+                      >
+                        <img
+                          src="https://imarticus.org/skillenza/img/icon_menu_white@2x.png"
+                          alt=""
+                          class="normal-view-img"
+                        />
+                        <img
+                          src="https://imarticus.org/skillenza/img/icon_menu_cancel_grey.png"
+                          alt=""
+                          class="close-view-img"
+                        />
+                      </button>
+                      <li class="nav-header">
+                        <a ui-sref="index.home" href=""
+                          ><img
+                            src="IMG_7036-removebg-preview.png"
+                            alt=""
+                            width="175"
+                            class="normal-view-img" />
+                          <img
+                            src="https://imarticus.org/skillenza/img/logo_web_skillenza_white@2x_2.svg"
+                            alt=""
+                            width="175"
+                            class="close-view-img"
+                        /></a>
+                      </li>
+                    </div>
+                    <div class="navbar-collapse collapse" id="navbar">
+                      <ul
+                        class="nav navbar-top-links navbar-right contents-1"
+                        style="margin-top: 20px"
+                      >
+                        <li>
+                          <a
+                            ui-sref="enterprise"
+                            target="_self"
+                            href=""
+                            ><img
+                              src="https://imarticus.org/skillenza/img/icon_menu_enterprise@2x.png"
+                              alt="" />
+                            <span>For Enterprises</span>
+                            <img
+                              src="https://imarticus.org/skillenza/img/icon_menu_chevron@2x.png"
+                              alt=""
+                              class="chevron pull-right"
+                          /></a>
+                        </li>
+                        <li>
+                          <a ui-sref="colleges" href=""
+                            ><img
+                              src="https://imarticus.org/skillenza/img/icon_menu_college@2x.png"
+                              alt="" />
+                            <span>For Colleges</span>
+                            <img
+                              src="https://imarticus.org/skillenza/img/icon_menu_chevron@2x.png"
+                              alt=""
+                              class="chevron pull-right"
+                          /></a>
+                        </li>
+                        <li>
+                          <button
+                            class="btn btn-primary hide-hover-banner"
+                            
+                          >
+                            Register
+                          </button>
+                        </li>
+                        <li>
+                          <button
+                            class="btn btn-primary btn3"
+                          >
+                            Explore Courses
+                          </button>
+                        </li>
+                      </ul>
+                      <ul
+                        class="row nav navbar-top-links navbar-right contents-2"
+                      >
+                        <li>
+                          <button class="btn btn-primary">Get Started</button>
+                        </li>
+                        <li>
+                          <button
+                            class="btn btn-primary btn2"
+                            data-toggle="modal"
+                          >
+                            Already have an account? Login
+                          </button>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="nav-shadow"></div>
+                  </nav>
+                </div>
+                <!-- end ngIf: !loggedIn --><!-- ngIf: loggedIn -->
+                <header id="intro">
+                  <div class="intro-cover"><div class="fill-width"></div></div>
+                  <div class="filter">
+                    <div class="container">
+                      <div class="row">
+                        <div class="my-head">
+                          <div
+                            class="col-md-10 col-md-offset-1 col-xs-12 text-left"
+                          >
+                            <div>
+                              <div class="biggest-text">Prove Yourself</div>
+                              <div class="biggest-subtext text-center m-t-5">
+                                Join, discover, compete and stand out with
+                                Skilledity.<br />#ProveYourself with the skills
+                                you have.
+                              </div>
+                            </div>
+                            <div class="text-center m-t-xl hidden-xs">
+                              <a
+                                class="btn btn-white-landing"
+                                
+                                >Explore courses</a
+                              >
+                            </div>
+                          </div>
+                          <div class="text-center visible-xs">
+                            <div class="col-xs-12 no-padding">
+                              <a
+                                class="btn btn-white-landing btn-block"
+                                
+                                >Explore courses</a
+                              >
+                            </div>
+                          </div>
+                          <div class="col-xs-12 text-center m-t-lg visible-xs">
+                            <div class="header-link">
+                              <a
+                                >Already have an account? Log in
+                                <img
+                                  src="https://imarticus.org/skillenza/img/chevron_white@2x.png"
+                                  alt=""
+                              /></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </header>
+                <div class="snackbar-container" data-snackbar="true"></div>
+              </div>
+            </div>
+          </section>
+         
+          <section class="container features-content">
+            <div class="row m-t-80">
+              <div
+                class="col-sm-12 col-xs-12 col-md-7 col-md-push-5 col-xs-push-0"
+              >
+                <img
+                  src="https://imarticus.org/skillenza/img/illustration_activities@2x.png"
+                  class="img-responsive"
+                />
+              </div>
+              <div
+                class="col-sm-12 col-xs-12 col-md-5 col-md-pull-7 text-left m-t-180 block-1"
+              >
+                <div class="landing-text-light ls-1">Activities</div>
+                <div class="landing-text-header m-t-10">
+                  Your skills meet opportunities
+                </div>
+                <div class="landing-subtext l-h-135 m-t-8 m-b-md">
+                  Showcase your skills by competing with the best, and earn the
+                  right to land exclusive job offers, and so much more.
+                </div>
+              </div>
+            </div>
+            <div class="row m-t-xl">
+              <div class="col-sm-12 col-xs-12 col-md-7">
+                <img
+                  src="https://imarticus.org/skillenza/img/illustration_communities@2x.png"
+                  class="img-responsive"
+                />
+              </div>
+              <div
+                class="col-sm-12 col-xs-12 col-md-5 text-left m-t-170 block-2"
+              >
+                <div class="landing-text-light ls-1">Communities</div>
+                <div class="landing-text-header m-t-10">Find your crowd</div>
+                <div class="landing-subtext l-h-135 m-t-8 m-b-md">
+                  Build your learning network and elevate your career prospects
+                  by following communities and participating in their
+                  activities.
+                </div>
+              </div>
+            </div>
+            <div class="row m-t-60 m-b-60">
+              <div
+                class="col-sm-12 col-xs-12 col-md-7 col-md-push-5 col-xs-push-0"
+              >
+                <img
+                  src="https://imarticus.org/skillenza/img/illustration_profile@2x.png"
+                  class="img-responsive"
+                />
+              </div>
+              <div
+                class="col-sm-12 col-xs-12 col-md-5 text-left col-md-pull-7 col-xs-pull-0 m-t-150 block-3"
+              >
+                <div class="landing-text-light ls-1">profile</div>
+                <div class="landing-text-header m-t-10">
+                  Build your experience graph
+                </div>
+                <div class="landing-subtext l-h-135 m-t-8 m-b-lg">
+                  Highlight your path to proficiency using the Experience Graph
+                  and have the communities that follow your journey be inspired
+                  by your experience.
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="text-center lt-gray how-it-works">
+            <div class="container">
+              <div class="landing-text-light ls-1 m-t-80">how it works</div>
+              <div class="landing-text-header m-t-10">
+                All you need to do is...
+              </div>
+              <div class="hidden-xs">
+                <div class="row m-t-60 m-b-80">
+                  <div class="col-md-10 col-md-offset-1">
+                    <ul class="timeline timeline-vertical">
+                      <li class="timeline-item">
+                        <div class="timeline-badge timeline-badge-join"></div>
+                        <div
+                          class="timeline-panel left-145"
+                          style="
+                            box-shadow: none;
+                            text-align: right;
+                            background: 0 0;
+                          "
+                        >
+                          <img
+                            src="https://imarticus.org/skillenza/img/illustration_join@2x.png"
+                            height="165"
+                            width="auto"
+                          />
+                        </div>
+                        <div
+                          class="timeline-panel-text m-t-50"
+                          style="
+                            box-shadow: none;
+                            text-align: left;
+                            float: right;
+                            min-width: 300px;
+                          "
+                        >
+                          <div class="landing-timeline-header">Join</div>
+                          <div class="landing-timeline-subtext m-t-6">
+                            Sign up and select your areas of<br />proficiency.
+                          </div>
+                        </div>
+                      </li>
+                      <li class="timeline-item m-t-xl">
+                        <div
+                          class="timeline-badge timeline-badge-discover"
+                        ></div>
+                        <div
+                          class="timeline-panel"
+                          style="
+                            box-shadow: none;
+                            text-align: left;
+                            background: 0 0;
+                            right: 75px;
+                          "
+                        >
+                          <img
+                            src="https://imarticus.org/skillenza/img/illustration_connect@2x.png"
+                            height="212"
+                            width="auto"
+                          />
+                        </div>
+                        <div
+                          class="timeline-panel-text m-t-70"
+                          style="box-shadow: none; text-align: left"
+                        >
+                          <div class="landing-timeline-header">Explore</div>
+                          <div class="landing-timeline-subtext m-t-6">
+                            Explore and solve challenges which<br />help you to
+                            build and enhance your profile.
+                          </div>
+                        </div>
+                      </li>
+                      <li class="timeline-item m-t-xl">
+                        <div
+                          class="timeline-badge timeline-badge-compete"
+                        ></div>
+                        <div
+                          class="timeline-panel left-145"
+                          style="
+                            box-shadow: none;
+                            text-align: right;
+                            background: 0 0;
+                          "
+                        >
+                          <img
+                            src="https://imarticus.org/skillenza/img/illustration_compete@2x.png"
+                            height="177"
+                            width="auto"
+                          />
+                        </div>
+                        <div
+                          class="timeline-panel-text m-t-60"
+                          style="
+                            box-shadow: none;
+                            text-align: left;
+                            float: right;
+                            min-width: 300px;
+                          "
+                        >
+                          <div class="landing-timeline-header">Compete</div>
+                          <div class="landing-timeline-subtext m-t-6">
+                            Figure out where you stand by<br />competing against
+                            the best, and unlock<br />jobs and stellar rewards
+                            in the process.
+                          </div>
+                        </div>
+                      </li>
+                      <li class="timeline-item m-t-60">
+                        <div
+                          class="timeline-badge timeline-badge-standout"
+                        ></div>
+                        <div
+                          class="timeline-panel"
+                          style="
+                            box-shadow: none;
+                            text-align: left;
+                            background: 0 0;
+                            right: 127px;
+                          "
+                        >
+                          <img
+                            src="https://imarticus.org/skillenza/img/illustration_stand-out@2x.png"
+                            height="178"
+                            width="auto"
+                          />
+                        </div>
+                        <div
+                          class="timeline-panel-text m-t-60"
+                          style="box-shadow: none; text-align: left"
+                        >
+                          <div class="landing-timeline-header">Stand out</div>
+                          <div class="landing-timeline-subtext m-t-6">
+                            Be known in the community for your<br />expertise by
+                            building your profile with<br />your achievements.
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="visible-xs">
+                <div class="text-center m-t-xl">
+                  <div class="col-md-12">
+                    <img
+                      src="https://imarticus.org/skillenza/img/illustration_join@2x.png"
+                      class="block-img-1"
+                    />
+                  </div>
+                  <div class="col-md-12">
+                    <div class="landing-timeline-header">Join</div>
+                    <div class="landing-timeline-subtext m-t-6">
+                      Sign up and select your areas of proficiency.
+                    </div>
+                  </div>
+                  <div class="col-md-12 m-t-xl">
+                    <img
+                      src="https://imarticus.org/skillenza/img/illustration_connect@2x.png"
+                      class="block-img-2"
+                    />
+                  </div>
+                  <div class="col-md-12">
+                    <div class="landing-timeline-header">Explore</div>
+                    <div class="landing-timeline-subtext m-t-6">
+                      Explore and solve challenges which help yout to build and
+                      enhance your profile.
+                    </div>
+                  </div>
+                  <div class="col-md-12 m-t-xl">
+                    <img
+                      src="https://imarticus.org/skillenza/img/illustration_compete@2x.png"
+                      class="block-img-3"
+                    />
+                  </div>
+                  <div class="col-md-12">
+                    <div class="landing-timeline-header">Compete</div>
+                    <div class="landing-timeline-subtext m-t-6">
+                      Figure out where you stand by competing against the best,
+                      and unlock jobs and stellar rewards in the process.
+                    </div>
+                  </div>
+                  <div class="col-md-12 m-t-xl">
+                    <img
+                      src="https://imarticus.org/skillenza/img/illustration_stand-out@2x.png"
+                      class="block-img-4"
+                    />
+                  </div>
+                  <div class="col-md-12 m-b-xl">
+                    <div class="landing-timeline-header">Stand out</div>
+                    <div class="landing-timeline-subtext m-t-6">
+                      Be known in the community for your expertise by building
+                      your profile with your achievements.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- <! -_----------------------------------------------------------------------------------------------------------------------------------- !> -->
+
+          <!-- ngInclude: 'https://imarticus.org/skillenza/views/common/footer.e4f76740.html' -->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
