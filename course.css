@@ -58,6 +58,12 @@ body {
   padding: 20px;
 }
 
+.history-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 .history-button {
   width: 200px;
   height: 40px;
@@ -69,7 +75,8 @@ body {
   font-weight: 600;
   cursor: pointer;
   margin-bottom: 20px;
-  margin-left: 20px;
+  /* margin-left: 41.5%; */
+
 }
 
 .card-container {
