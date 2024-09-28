@@ -4,22 +4,35 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Our Courses</title>
+    <script
+      src="https://kit.fontawesome.com/e2a5af85b3.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="course.css" />
+    <link rel="stylesheet" href="footer.css" />
   </head>
   <body>
     <nav class="navbar">
       <div class="nav-content">
-        <div class="navbar-brand">
+        <div class="navbar-brand" id="logo">
           <img src="assets/images/logo.png" alt="Skilledity" />
+        </div>
+        <div class="search-bar" id="search-bar">
+          <input type="text" placeholder="Search for courses"/>
+          <i class="fa-solid fa-magnifying-glass" id="search-icon"></i>
         </div>
       </div>
     </nav>
 
     <div class="course-container">
-      <div class="history-container"><button class="history-button">Our Courses</button></div>
+      <div class="history-container">
+        <button class="history-button">Our Courses</button>
+      </div>
       <div class="card-container">
         <div class="card">
-          <div class="card-image"><img src="assets/images/JAVA.png" alt="java"></div>
+          <div class="card-image">
+            <img src="assets/images/JAVA.png" alt="java" />
+          </div>
           <div class="card-content">
             <h4>Java Programming</h4>
             <div class="button-container">
@@ -29,7 +42,21 @@
           </div>
         </div>
         <div class="card">
-          <div class="card-image"><img src="assets/images/Python.png" alt=""></div>
+          <div class="card-image">
+            <img src="assets/images/C++.png" alt="java" />
+          </div>
+          <div class="card-content">
+            <h4>C++ Programming</h4>
+            <div class="button-container">
+              <button class="explore-button">Explore</button>
+              <button class="register-button">Register</button>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-image">
+            <img src="assets/images/Python.png" alt="" />
+          </div>
           <div class="card-content">
             <h4>Python Development</h4>
             <div class="button-container">
@@ -39,7 +66,9 @@
           </div>
         </div>
         <div class="card">
-          <div class="card-image"><img src="assets/images/DataScience.png" alt=""></div>
+          <div class="card-image">
+            <img src="assets/images/DataScience.png" alt="" />
+          </div>
           <div class="card-content">
             <h4>Data Science & Analytics</h4>
             <div class="button-container">
@@ -49,7 +78,9 @@
           </div>
         </div>
         <div class="card">
-          <div class="card-image"><img src="assets/images/frontend.png" alt=""></div>
+          <div class="card-image">
+            <img src="assets/images/frontend.png" alt="" />
+          </div>
           <div class="card-content">
             <h4>Frontend Web Development</h4>
             <div class="button-container">
@@ -59,7 +90,9 @@
           </div>
         </div>
         <div class="card">
-          <div class="card-image"><img src="assets/images/backend.png" alt=""></div>
+          <div class="card-image">
+            <img src="assets/images/backend.png" alt="" />
+          </div>
           <div class="card-content">
             <h4>Backend Development</h4>
             <div class="button-container">
@@ -69,7 +102,9 @@
           </div>
         </div>
         <div class="card">
-          <div class="card-image"><img src="assets/images/Mobile App development.png" alt=""></div>
+          <div class="card-image">
+            <img src="assets/images/Mobile App development.png" alt="" />
+          </div>
           <div class="card-content">
             <h4>Mobile App Development</h4>
             <div class="button-container">
@@ -79,7 +114,9 @@
           </div>
         </div>
         <div class="card">
-          <div class="card-image"><img src="assets/images/Machine Learning.png" alt=""></div>
+          <div class="card-image">
+            <img src="assets/images/Machine Learning.png" alt="" />
+          </div>
           <div class="card-content">
             <h4>Machine Learning</h4>
             <div class="button-container">
@@ -89,7 +126,9 @@
           </div>
         </div>
         <div class="card">
-          <div class="card-image"><img src="assets/images/Cloud_Computing.png" alt=""></div>
+          <div class="card-image">
+            <img src="assets/images/Cloud_Computing.png" alt="" />
+          </div>
           <div class="card-content">
             <h4>Cloud Computing</h4>
             <div class="button-container">
@@ -99,7 +138,9 @@
           </div>
         </div>
         <div class="card">
-          <div class="card-image"><img src="assets/images/cybersecurity.png" alt=""></div>
+          <div class="card-image">
+            <img src="assets/images/cybersecurity.png" alt="" />
+          </div>
           <div class="card-content">
             <h4>Cybersecurity</h4>
             <div class="button-container">
@@ -109,7 +150,9 @@
           </div>
         </div>
         <div class="card">
-          <div class="card-image"><img src="assets/images/AI & Deep Learning.png" alt=""></div>
+          <div class="card-image">
+            <img src="assets/images/AI & Deep Learning.png" alt="" />
+          </div>
           <div class="card-content">
             <h4>AI & Deep Learning</h4>
             <div class="button-container">
@@ -119,7 +162,9 @@
           </div>
         </div>
         <div class="card">
-          <div class="card-image"><img src="assets/images/IOT.png" alt=""></div>
+          <div class="card-image">
+            <img src="assets/images/IOT.png" alt="" />
+          </div>
           <div class="card-content">
             <h4>IoT (Internet of Things)</h4>
             <div class="button-container">
@@ -129,7 +174,9 @@
           </div>
         </div>
         <div class="card">
-          <div class="card-image"><img src="assets/images/BlockchainTechnology.png" alt=""></div>
+          <div class="card-image">
+            <img src="assets/images/BlockchainTechnology.png" alt="" />
+          </div>
           <div class="card-content">
             <h4>Blockchain Technology</h4>
             <div class="button-container">
@@ -139,7 +186,9 @@
           </div>
         </div>
         <div class="card">
-          <div class="card-image"><img src="assets/images/UI_UX.png" alt=""></div>
+          <div class="card-image">
+            <img src="assets/images/UI_UX.png" alt="" />
+          </div>
           <div class="card-content">
             <h4>UI/UX Design</h4>
             <div class="button-container">
@@ -149,7 +198,9 @@
           </div>
         </div>
         <div class="card">
-          <div class="card-image"><img src="assets/images/FullStack.png" alt=""></div>
+          <div class="card-image">
+            <img src="assets/images/FullStack.png" alt="" />
+          </div>
           <div class="card-content">
             <h4>Full Stack Development</h4>
             <div class="button-container">
@@ -159,7 +210,9 @@
           </div>
         </div>
         <div class="card">
-          <div class="card-image"><img src="assets/images/Computer Vision.png" alt=""></div>
+          <div class="card-image">
+            <img src="assets/images/Computer Vision.png" alt="" />
+          </div>
           <div class="card-content">
             <h4>Computer Vision (OpenCV, TensorFlow)</h4>
             <div class="button-container">
@@ -168,7 +221,61 @@
             </div>
           </div>
         </div>
+        <div class="card">
+          <div class="card-image">
+            <img src="assets/images/Robotics.png" alt="" />
+          </div>
+          <div class="card-content">
+            <h4>Robotics and Automation</h4>
+            <div class="button-container">
+              <button class="explore-button">Explore</button>
+              <button class="register-button">Register</button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-top">
+          <div class="footer-column">
+            <img
+              src="assets/images/logo.png"
+              alt="skilledity-logo"
+              class="footer-logo"
+            />
+            <p class="footer-mission">
+              Our mission is to “develop the leaders of tomorrow by delivering
+              purposeful learning experiences.”
+            </p>
+          </div>
+          <div class="footer-column">
+            <h3>COMPANY</h3>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>ENTERPRISE SOLUTIONS</h3>
+            <ul>
+              <li><a href="#">Talent Branding & Hiring</a></li>
+              <li><a href="#">Developer Evangelism</a></li>
+              <li><a href="#">Digital Disruption</a></li>
+            </ul>
+          </div>
+          <div class="footer-column footer-social">
+            <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p><a href="#">Terms</a> | <a href="#">Privacy Policy</a></p>
+          <p>© 2024 Imarticus Learning. All rights reserved</p>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
   </body>
 </html>
