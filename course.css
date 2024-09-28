@@ -22,6 +22,10 @@ body {
   font-family: sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: #000000;
+}
 /* ==================== NAV BAR ===================== */
 
 .navbar {
@@ -196,6 +200,7 @@ p {
   border-radius: 4px;
   font-weight: 500;
   cursor: pointer;
+  margin-left: 20px;
 }
 
 @media (max-width: 768px) {
