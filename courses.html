@@ -10,6 +10,7 @@
     ></script>
     <link rel="stylesheet" href="course.css" />
     <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="login.css">
   </head>
   <body>
     <nav class="navbar">
@@ -17,16 +18,33 @@
         <div class="navbar-brand" id="logo">
           <a href="newdup.html"><img src="assets/images/logo.png" alt="Skilledity" /></a>
         </div>
-        <div class="search-bar" id="search-bar">
-          <input type="text" placeholder="Search for courses" id="course-search"/>
-          <i class="fa-solid fa-magnifying-glass" id="search-icon"></i>
-        </div>
       </div>
     </nav>
 
-    <div class="course-container">
+    <div class="course-page">
+      <div class="course-page-content">
+        <div class="text-tagline">
+          <h1>Crack your goal with
+            <span>India's top</span> educators
+          </h1> 
+        </div>
+        <div class="course-page-image">
+          <img src="assets/images/course-page-image.png" alt="img">
+        </div>
+      </div>
+    </div>
+
+    <div class="course-container" id="courses">
       <div class="history-container">
         <button class="history-button">Our Courses</button>
+      </div>
+      <div class="search-bar-container">
+        <div class="search-bar" id="search-bar">
+          <input type="text" placeholder="Search for courses" id="course-search" />
+          <div class="icon-container">
+            <i class="fa-solid fa-magnifying-glass" id="search-icon"></i>
+          </div>
+        </div>
       </div>
       <div class="card-container">
         <div class="card">
