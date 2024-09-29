@@ -30,21 +30,24 @@ a {
 
 .navbar {
   z-index:100;
-  height: 55px;
+  height: 95px;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color:#55679C0D;
-  border-bottom: 2px solid #DEE5F8;
+  /* background-color:#55679C0D; */
+  background-color: transparent;
+  /* border-bottom: 2px solid #DEE5F8; */
 }
 
 .nav-content {
-  width: 75%;
+  width: 90%;
   height: 62.5%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 2px solid #93939363;
+  padding-bottom: 20px;
 }
 
 .navbar-brand {
