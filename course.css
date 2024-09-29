@@ -61,11 +61,13 @@ a {
 .search-bar-container {
   width: 100%;
   display: flex;
-  justify-content: end;
+  justify-content: center;
+  align-items: center;
   margin-top: 20px;
 }
 
 .search-bar {
+  margin-left: 70px;
   width: 25%;
   height: 100%;
   display: flex;
@@ -231,9 +233,10 @@ p {
 }
 
 @media screen and (max-width : 579px) {
-  
+
   .search-bar {
     width: 100%;
   }
+
 }
 
