@@ -22,10 +22,6 @@ body {
   font-family: sans-serif;
 }
 
-a {
-  text-decoration: none;
-  color: #000000;
-}
 /* ==================== NAV BAR ===================== */
 
 .navbar {
@@ -35,9 +31,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color:#55679C0D; */
   background-color: transparent;
-  /* border-bottom: 2px solid #DEE5F8; */
 }
 
 .nav-content {
@@ -213,6 +207,11 @@ p {
   background-color: #04081be2;
 }
 
+.explore-button a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
 .register-button {
   display: flex;
   align-items: center;
@@ -227,6 +226,11 @@ p {
   font-weight: 500;
   cursor: pointer;
   margin-left: 20px;
+}
+
+.register-button a {
+  color: #000000;
+  text-decoration: none;
 }
 
 @media (max-width: 768px) {
