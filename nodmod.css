@@ -1661,7 +1661,13 @@ pre code {
 .col-xs-7,
 .col-xs-8,
 .col-xs-9 {
-  right: 90px;
+  right: 90px; 
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.col-md-122{
   position: relative;
   min-height: 1px;
   padding-right: 15px;

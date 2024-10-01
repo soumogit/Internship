@@ -413,6 +413,8 @@ html {
   line-height: 1.3;
   text-align: center;
   color: #122e46;
+  position: relative;
+  left: 90px;
 }
 .landing-page .login .nonactive {
   color: rgba(255, 255, 255, 0.2);
