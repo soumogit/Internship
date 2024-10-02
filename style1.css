@@ -59,7 +59,22 @@ body {
     position: relative;
     height: 200px;
 }
-
+.course-path {
+    font-size: 18px;
+    color: whitesmoke;
+  }
+  
+  .course-link {
+    text-decoration: none; /* Removes underline */
+    color: whitesmoke; /* Adds a link color */
+    font-weight: bold;
+  }
+  
+  .course-link:hover {
+    text-decoration: underline;
+    color: white; /* Darker blue on hover */
+  }
+  
 /* Course Path and Info */
 .course-path {
     font-size: 14px;
@@ -191,7 +206,123 @@ h1 {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     height: fit-content;
 }
+/* Base styling for buttons */
+.small-btn {
+    padding: 10px 15px;        /* Padding for all buttons */
+    border: none;               /* No border */
+    border-radius: 5px;        /* Slightly rounded corners */
+    font-size: 16px;            /* Font size */
+    cursor: pointer;            /* Pointer cursor on hover */
+    transition: background-color 0.3s, color 0.3s, transform 0.2s; /* Smooth transition */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
 
+/* Styling for the Register button with gradient */
+.register-btn {
+    background: linear-gradient(90deg, #6a11cb, #2575fc); /* Gradient from purple to blue */
+    color: white;               /* White text color */
+    font-weight: bold;          /* Bold text */
+}
+
+/* Hover effect for the Register button */
+.register-btn:hover {
+    background: linear-gradient(90deg, #5e0f98, #1e5cda); /* Darker gradient on hover */
+    transform: translateY(-2px); /* Slight upward movement */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+/* Styling for the Like button */
+.like-btn {
+    background-color: #f0f0f0; /* Default background color */
+    color: #ff4d4d;            /* Icon color */
+    border: none;              /* No border */
+    border-radius: 5px;       /* Slightly rounded corners */
+    font-size: 24px;          /* Icon size */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+.like-btn:hover {
+    transform: scale(1.1); /* Increase size by 10% */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Add shadow */
+}
+
+/* Change styles when liked */
+.like-btn.liked {
+    background-color: #ff4d4d; /* Red background when liked */
+    color: white;               /* Change icon color to white when liked */
+}
+
+/* Styling for the Share button */
+.share-btn {
+    background-color: #f0f0f0; /* Default background color */
+    color: #2575fc;            /* Text color */
+    font-weight: bold;         /* Bold text */
+}
+
+/* Hover effect for the Share button */
+.share-btn:hover {
+    background-color: #d0d0d0; /* Darker background on hover */
+    transform: translateY(-2px); /* Slight upward movement */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+/* Additional button styles if necessary */
+.button-container {
+    margin: 10px 0; /* Space between buttons */
+}
+
+/* Popup styling */
+.popup {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    left: 50%; /* Center the popup */
+    top: 50%;
+    transform: translate(-50%, -50%); /* Centering */
+    background-color: white; /* Background color */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    padding: 20px; /* Padding inside the popup */
+    z-index: 1000; /* Above other elements */
+    width: 400px; /* Set a specific width */
+    height: 180px; /* Fixed height */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    text-align: center; /* Center the text */
+}
+
+/* Overlay for dimming background */
+.overlay {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    top: 0; 
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+    z-index: 999; /* Below the popup */
+}
+
+/* Copy button styling */
+.copy-btn, .share-btn {
+    background: linear-gradient(90deg, #5e0f98, #1e5cda); /* Blue background */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px; /* Padding */
+    cursor: pointer; /* Pointer cursor */
+    
+    transition: background-color 0.3s; /* Smooth transition */
+}
+.copy-btn{
+    margin-top: 10px; /* Space between the paragraph and button */
+    width: 90%; /* Full width */
+    height: auto;
+}
+
+.copy-btn:hover {
+    background: linear-gradient(90deg, #5e0f98, #1e5cda); /* Darker blue on hover */
+    transform: translateY(-2px); /* Slight upward movement */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
 /* Image Container */
 .image-container {
     position: absolute;
@@ -233,6 +364,7 @@ h1 {
     justify-content: center;
     align-items: center;
 }
+
 
 /* Key Takeaways */
 .key-takeaways {
@@ -359,5 +491,19 @@ h1 {
 
     .rating span {
         font-size: 10px;
+    }
+    .popup {
+        width: 90%; /* Make the popup responsive */
+        height: auto; /* Allow height to adjust based on content */
+    }
+    .popup h3 {
+        font-size: 1.5em; /* Adjust font size for smaller screens */
+    }
+    .popup p {
+        font-size: 1em; /* Adjust font size for smaller screens */
+    }
+    .copy-btn {
+        width: 100%; /* Make buttons full-width for smaller screens */
+        margin: 5px 0; /* Add margin between buttons */
     }
 }

@@ -58,7 +58,7 @@ body {
 .search-bar-container {
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   margin-top: 20px;
 }

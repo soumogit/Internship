@@ -24,7 +24,9 @@
       </div>
     </nav>
     <div class="header">
-        <div class="course-path">Courses > JAVA</div>
+      <div class="course-path">
+        <a href="courses.html" class="course-link">Courses</a> > AI & Deep Learning
+      </div>
         <div class="course-info">
             <h1>Software Tools <br> JAVA</h1>
             <div class="rating">
@@ -63,11 +65,15 @@
                 </div>
             </div>
             <div class="side-content">
-                <div class="button-container">
-                    <button class="small-btn like-btn"><i class="fa-solid fa-heart"></i> Like</button>
-                    <button class="small-btn share-btn"><i class="fa-solid fa-share"></i> Share</button>
-                    <button class="small-btn pro-btn">Go Pro</button>
-                </div>
+              <div class="button-container">
+                <button class="small-btn like-btn" id="likeButton" >
+                    <i class="fa-solid fa-heart"></i>
+                </button>
+                <button class="small-btn share-btn" onclick="showCourseLink()">
+                  <i class="fa-solid fa-share"></i>
+                </button>
+                <button class="small-btn register-btn" onclick="window.open('https://6pxg10jr.forms.app/internship-program-form', '_blank')">Register</button>
+              </div>
                 <div class="space"></div> <!-- Added space after the button -->
                 <div class="key-takeaways">
                     <h2>Key Takeaways</h2>
@@ -128,6 +134,17 @@
           </div>
         </div>
       </footer>
+      <!-- Overlay for popup -->
+    <div class="overlay" id="overlay" onclick="closePopup()"></div>
+
+    <!-- Popup for displaying the link -->
+    <div class="popup" id="popup">
+        <h3>Course Page Link</h3>
+        <p id="courseLink">https://yourcoursepage.com</p> <!-- Update with your course page link -->
+        <button class="copy-btn" onclick="copyToClipboard()">Copy Link</button>
+        <button class="copy-btn" onclick="closePopup()">Close</button>
+    </div>
+      <script src="popup.js"></script>
     </body>
   </html>
 
