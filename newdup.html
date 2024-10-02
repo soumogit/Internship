@@ -1,10 +1,27 @@
 <html>
   <head>
-    <title ng-bind="pageTitle">Skilledity</title>
-    <link href="nodmod.css" rel="stylesheet" />
-    <link href="landind.css" rel="stylesheet" />
-    <link href="style.css" rel="stylesheet" />
-    <link href="custom.css" rel="stylesheet" />
+    <title ng-bind="pageTitle" >Skilledity</title>
+    <link
+      href="nodmod.css"
+      rel="stylesheet"
+    />
+    <link
+      href="landind.css"
+      rel="stylesheet"
+    />
+    <link
+      href="style.css"
+      rel="stylesheet"
+    />
+    <link
+      href="custom.css"
+      rel="stylesheet"
+    />
+    <link
+      href="font.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <base href="" />
   </head>
@@ -135,7 +152,7 @@
           padding: 0 30px;
         }
         #intro {
-          background: url(Untitled\ design\ 2.PNG);
+          background: url(back5.svg);
           background-size: cover;
           background-position: center;
           height: 670px;
@@ -277,8 +294,11 @@
           background-color: rgba(0, 0, 0, 0.1);
         }
         .m-t-res-testimonial {
-          margin-top: 24px;
+          margin-top: 8px;
+          position: relative;
+          left: 0px;
         }
+        
         .signup-card .landing-timeline-header {
           font-size: 16px;
         }
@@ -555,6 +575,7 @@
             text-align: center;
           }
           .my-head {
+           
             margin-top: 170px;
           }
           .biggest-subtext {
@@ -562,7 +583,7 @@
             margin-bottom: 90px;
           }
           .my-head .btn-white-landing {
-            border-radius: 3px;
+            border-radius: 3px ;
             background-color: #fff;
             box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.15),
               0 2px 4px 0 rgba(0, 0, 0, 0.08);
@@ -803,6 +824,42 @@
           background-color: #eaeaea;
         }
       </style>
+      <style>
+        @media screen and (min-width: 400px){
+          .introtext{
+            width: 70%;
+          }
+          .features-content{
+            padding-left: 200px;
+          }
+          #intro
+          {
+
+            background: url(back5crop2.png);
+          background-size: cover;
+          background-position: center;
+          height: 670px;
+          background-blend-mode: luminosity;
+          }
+        }
+        @media screen and (min-width: 1000px){
+          .introtext{
+            width: 100%;
+          }
+          .features-content{
+            padding-left: 0px;
+          }
+          #intro
+          {
+
+            background: url(back5.svg);
+          background-size: cover;
+          background-position: center;
+          height: 670px;
+          background-blend-mode: luminosity;
+          }
+        }
+      </style>
       <div id="wrapper">
         <div class="landing-page">
           <section id="logindiv">
@@ -834,7 +891,7 @@
                       <li class="nav-header">
                         <a ui-sref="index.home" href=""
                           ><img
-                            src="IMG_7036-removebg-preview.png"
+                            src="assets/images/logo.png"
                             alt=""
                             width="175"
                             class="normal-view-img" />
@@ -852,7 +909,10 @@
                         style="margin-top: 20px"
                       >
                         <li>
-                          <a ui-sref="enterprise" target="_self" href=""
+                          <a
+                            ui-sref="enterprise"
+                            target="_self"
+                            href=""
                             ><img
                               src="https://imarticus.org/skillenza/img/icon_menu_enterprise@2x.png"
                               alt="" />
@@ -876,16 +936,21 @@
                           /></a>
                         </li>
                         <li>
-                          <button class="btn btn-primary hide-hover-banner">
+                          <button
+                            class="btn btn-primary hide-hover-banner"
+                            
+                          >
                             Register
                           </button>
                         </li>
                         <li>
-                          <a href="courses.html"
-                            ><button class="btn btn-primary btn3">
-                              Explore Courses
-                            </button></a
+                          
+                          <button
+                            class="btn btn-primary btn3"
                           >
+                          <a href="courses.html">
+                            Explore Courses</a>
+                          </button>
                         </li>
                       </ul>
                       <ul
@@ -915,24 +980,29 @@
                       <div class="row">
                         <div class="my-head">
                           <div
-                            class="col-md-10 col-md-offset-1 col-xs-12 text-left"
-                          >
-                            <div>
+                            class="col-md-10 col-md-offset-1 col-xs-12 text-left introtext"
+                           >
+                            <div class="introtext">
                               <div class="biggest-text">Prove Yourself</div>
-                              <div class="biggest-subtext text-center m-t-5">
+                              <div class="biggest-subtext text-left m-t-5">
                                 Join, discover, compete and stand out with
                                 Skilledity.<br />#ProveYourself with the skills
                                 you have.
                               </div>
                             </div>
-                            <div class="text-center m-t-xl hidden-xs">
-                              <a href="courses.html"><button class="btn btn-white-landing"
-                                >Explore courses</button></a>
+                            <div class="text-left m-t-xl hidden-xs">
+                              <a href="courses.html"
+                                class="btn btn-white-landing"
+                                
+                                >Explore courses</a
+                              >
                             </div>
                           </div>
-                          <div class="text-center visible-xs">
+                          <div class="text-left visible-xs">
                             <div class="col-xs-12 no-padding">
-                              <a class="btn btn-white-landing btn-block"
+                              <a
+                                class="btn btn-white-landing btn-block"
+                                
                                 >Explore courses</a
                               >
                             </div>
@@ -956,7 +1026,7 @@
               </div>
             </div>
           </section>
-
+         
           <section class="container features-content">
             <div class="row m-t-80">
               <div
@@ -968,15 +1038,14 @@
                 />
               </div>
               <div
-                class="col-sm-12 col-xs-12 col-md-5 col-md-pull-7 text-left m-t-180 block-1"
+                class="col-sm-12 col-xs-12 col-md-5 col-md-pull-7 text-left m-t-120 block-1"
               >
                 <div class="landing-text-light ls-1">Activities</div>
                 <div class="landing-text-header m-t-10">
-                  Your skills meet opportunities
+                  Hands-On Project Experience
                 </div>
                 <div class="landing-subtext l-h-135 m-t-8 m-b-md">
-                  Showcase your skills by competing with the best, and earn the
-                  right to land exclusive job offers, and so much more.
+                  Gain hands-on experience by working on real-world projects in cutting-edge technical fields such as Java, Python, Data Science, AI, and more. Develop your skills and build an impressive portfolio by completing individual projects.
                 </div>
               </div>
             </div>
@@ -990,12 +1059,10 @@
               <div
                 class="col-sm-12 col-xs-12 col-md-5 text-left m-t-170 block-2"
               >
-                <div class="landing-text-light ls-1">Communities</div>
-                <div class="landing-text-header m-t-10">Find your crowd</div>
+                <div class="landing-text-light ls-1">Eligibility</div>
+                <div class="landing-text-header m-t-10">Inclusive Opportunity</div>
                 <div class="landing-subtext l-h-135 m-t-8 m-b-md">
-                  Build your learning network and elevate your career prospects
-                  by following communities and participating in their
-                  activities.
+                  This internship welcomes students from all years of Bachelor’s or Master’s programs, offering opportunities regardless of your academic background.
                 </div>
               </div>
             </div>
@@ -1009,16 +1076,14 @@
                 />
               </div>
               <div
-                class="col-sm-12 col-xs-12 col-md-5 text-left col-md-pull-7 col-xs-pull-0 m-t-150 block-3"
+                class="col-sm-12 col-xs-12 col-md-5 text-left col-md-pull-7  m-t-150 block-3"
               >
                 <div class="landing-text-light ls-1">profile</div>
                 <div class="landing-text-header m-t-10">
                   Build your experience graph
                 </div>
-                <div class="landing-subtext l-h-135 m-t-8 m-b-lg">
-                  Highlight your path to proficiency using the Experience Graph
-                  and have the communities that follow your journey be inspired
-                  by your experience.
+                <div class="landing-subtext l-h-135 m-t-8 m-b-md">
+                  After completion of the internship, earn a certificate of completion and receive a Letter of Recommendation.
                 </div>
               </div>
             </div>
@@ -1058,9 +1123,9 @@
                             min-width: 300px;
                           "
                         >
-                          <div class="landing-timeline-header">Join</div>
+                          <div class="landing-timeline-header">Discover</div>
                           <div class="landing-timeline-subtext m-t-6">
-                            Sign up and select your areas of<br />proficiency.
+                            Browse through the top technical <br />domains and select areas that <br /> align with your skills and interests.
                           </div>
                         </div>
                       </li>
@@ -1087,10 +1152,9 @@
                           class="timeline-panel-text m-t-70"
                           style="box-shadow: none; text-align: left"
                         >
-                          <div class="landing-timeline-header">Explore</div>
+                          <div class="landing-timeline-header">Enroll</div>
                           <div class="landing-timeline-subtext m-t-6">
-                            Explore and solve challenges which<br />help you to
-                            build and enhance your profile.
+                            Register for the course or project <br/>of your choice, and kickstart your learning <br/>journey right away.
                           </div>
                         </div>
                       </li>
@@ -1121,11 +1185,9 @@
                             min-width: 300px;
                           "
                         >
-                          <div class="landing-timeline-header">Compete</div>
+                          <div class="landing-timeline-header">Create</div>
                           <div class="landing-timeline-subtext m-t-6">
-                            Figure out where you stand by<br />competing against
-                            the best, and unlock<br />jobs and stellar rewards
-                            in the process.
+                            Apply your knowledge by working <br/>on hands-on projects and solving<br/> real-world challenges.
                           </div>
                         </div>
                       </li>
@@ -1152,10 +1214,9 @@
                           class="timeline-panel-text m-t-60"
                           style="box-shadow: none; text-align: left"
                         >
-                          <div class="landing-timeline-header">Stand out</div>
+                          <div class="landing-timeline-header">Submit</div>
                           <div class="landing-timeline-subtext m-t-6">
-                            Be known in the community for your<br />expertise by
-                            building your profile with<br />your achievements.
+                            Submit your completed projects <br/>and receive certificates and recommendations <br/>to boost your career.
                           </div>
                         </div>
                       </li>
@@ -1220,12 +1281,309 @@
               </div>
             </div>
           </section>
+          
 
+<section class="text-center  lt-blue-bg testimonials-sec">
+  <div class="container">
+    <div
+      class="carousel slide"
+      ng-non-bindable=""
+      data-ride="carousel"
+      id="quote-carousel"
+      style="overflow: hidden"
+    >
+      <ol class="carousel-indicators">
+        <li
+          data-target="#quote-carousel"
+          data-slide-to="0"
+          class=""
+        ></li>
+        <li
+          data-target="#quote-carousel"
+          data-slide-to="1"
+          class="active"
+        ></li>
+        <li
+          data-target="#quote-carousel"
+          data-slide-to="2"
+          class=""
+        ></li>
+      </ol>
+      <div class="carousel-inner text-center">
+        <div class="item">
+          <blockquote class="blockquote_override">
+            <div class="row">
+              <div class="col-md-12 m-t-60">
+                
+              </div>
+              <div class="col-xs-10 col-xs-offset-1 m-t-lg">
+                <div class="testimonial-content">
+                  "I would like to thank the Skillenza &amp; Ixigo
+                  team for putting up such an awesome event. Events
+                  like this hackathon are an opportunity to showcase
+                  my coding skills, creativeness and working with
+                  team. I am totally thrilled to be a winner and
+                  working for Ixigo"
+                </div>
+              </div>
+              <div
+                class="col-md-12 col-xs-12 m-t-xl m-t-res-testimonial"
+              style="position: relative;bottom: 50px;" >
+                <div class="testimonial-header">Haimal Khetan</div>
+                <div class="testimonial-subcontent">
+                  Winner of ixigo Hackathon
+                </div>
+              </div>
+            </div>
+          </blockquote>
+        </div>
+        <div class="item active">
+          <blockquote class="blockquote_override">
+            <div class="row">
+              <div class="col-md-12 m-t-60">
+                
+              </div>
+              <div class="col-xs-10 col-xs-offset-1 m-t-lg">
+                <div class="testimonial-content">
+                  "I went to one of Skillenza's hackathon events which
+                  was for a position of my own domain. The people
+                  working for Skillenza were so cooperative. The
+                  simple platform has so many challenges on offer for
+                  all kinds of skills."
+                </div>
+              </div>
+              <div
+                class="col-md-12 col-xs-12 m-t-xl m-t-res-testimonial"
+              style="margin-top: 24px;">
+                <div class="testimonial-header">Nitin Arvind</div>
+                <div class="testimonial-subcontent">
+                  LBrands (Hired as an Android Dev)
+                </div>
+              </div>
+            </div>
+          </blockquote>
+        </div>
+        <div class="item">
+          <blockquote class="blockquote_override">
+            <div class="row">
+              <div class="col-md-12 m-t-60">
+                
+              </div>
+              <div class="col-xs-10 col-xs-offset-1 m-t-lg">
+                <div class="testimonial-content">
+                  "Skillenza for me has provided great opportunity to
+                  work with such cool and skilful developers and
+                  coders. I got placed also with good package and I
+                  really want to thank Skillenza for helping me
+                  showcase my coding skills. Highly recommend to all
+                  who are looking for a change or skilling up."
+                </div>
+              </div>
+              <div
+                class="col-md-12 col-xs-12 m-t-xl m-t-res-testimonial"
+              >
+                <div class="testimonial-header">Chandan Singh</div>
+                <div class="testimonial-subcontent">
+                  Winner of Jivox Hackathon
+                </div>
+              </div>
+            </div>
+          </blockquote>
+        </div>
+      </div>
+      <a
+        data-slide="prev"
+        href="#quote-carousel"
+        class="left carousel-control"
+        ><i class="fa fa-angle-left"></i
+      ></a>
+      <a
+        data-slide="next"
+        href="#quote-carousel"
+        class="right carousel-control"
+        ><i class="fa fa-angle-right"></i
+      ></a>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+  <style>
+            
+  /* Footer Styles */
+  .footer {
+    width: 100vw;
+    height: fit-content;
+    background-color: #f2f2f2;
+    padding: 40px 0;
+    color: #666;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .footer-container {
+    width: 70%;
+  }
+  
+  .footer-top {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 20px;
+  }
+  
+  /* Footer Columns */
+  .footer-column {
+    flex-basis: 22%;
+    text-align: left;
+  }
+  
+  .footer-logo {
+    max-width: 200px;
+  }
+  
+  .footer-mission {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #999;
+  }
+  
+  .footer-column h3 {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-column ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-column ul li a {
+    text-decoration: none;
+    color: #666;
+    font-size: 14px;
+  }
+  
+  .footer-column ul li a:hover {
+    color: #000;
+  }
+  
+  /* Social Media Icons */
+  .footer-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .footer-social a {
+    margin: 0 10px;
+    color: #666;
+    font-size: 30px;
+  }
+  
+  /* Footer Bottom */
+  .footer-bottom {
+    padding-top: 20px;
+    border-top: 1px solid #a8a8a8 ;
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  
+  .footer-bottom p {
+    margin: 5px 0;
+  }
+  
+  .footer-bottom a {
+    text-decoration: none;
+    color: #666;
+  }
+  
+  .footer-bottom a:hover {
+    color: #000;
+  }
+  
+  @media (max-width: 768px) {
+    .footer-top {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        justify-content: center;
+    }
+  }
+  
+  </style>
+          <footer class="footer">
+            <div class="footer-container">
+              <div class="footer-top">
+                <div class="footer-column">
+                  <img
+                    src="assets/images/logo.png"
+                    alt="skilledity-logo"
+                    class="footer-logo"
+                  />
+                  <p class="footer-mission">
+                    Our mission is to “develop the leaders of tomorrow by delivering
+                    purposeful learning experiences.”
+                  </p>
+                </div>
+                <div class="footer-column">
+                  <h3>COMPANY</h3>
+                  <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                  </ul>
+                </div>
+                <div class="footer-column">
+                  <h3>ENTERPRISE SOLUTIONS</h3>
+                  <ul>
+                    <li><a href="#">Talent Branding & Hiring</a></li>
+                    <li><a href="#">Developer Evangelism</a></li>
+                    <li><a href="#">Digital Disruption</a></li>
+                  </ul>
+                </div>
+                <div class="footer-column footer-social">
+                  <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                  <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="footer-bottom">
+                <p><a href="#">Terms</a> | <a href="#">Privacy Policy</a></p>
+                <p>©️ 2024 Imarticus Learning. All rights reserved</p>
+              </div>
+            </div>
+          </footer>
           <!-- <! -_----------------------------------------------------------------------------------------------------------------------------------- !> -->
 
           <!-- ngInclude: 'https://imarticus.org/skillenza/views/common/footer.e4f76740.html' -->
+        
         </div>
       </div>
     </div>
+<!-------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+<script src="scc.js"></script>
+<script src="scc1.js"></script>
+
+
+
+
+
   </body>
 </html>

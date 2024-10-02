@@ -3,7 +3,7 @@
  * Copyright 2011-2016 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */ /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
-html {
+ html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -1318,6 +1318,7 @@ mark {
 .text-center {
   text-align: center;
 }
+
 .text-justify {
   text-align: justify;
 }
@@ -1625,7 +1626,7 @@ pre code {
 .col-lg-8,
 .col-lg-9,
 .col-md-1,
-.col-md-10,
+
 .col-md-11,
 .col-md-12,
 .col-md-2,
@@ -1660,6 +1661,20 @@ pre code {
 .col-xs-7,
 .col-xs-8,
 .col-xs-9 {
+  right: 90px; 
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.col-md-122{
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.col-md-10
+{
   position: relative;
   min-height: 1px;
   padding-right: 15px;
@@ -1680,6 +1695,7 @@ pre code {
   float: left;
 }
 .col-xs-12 {
+  top: 70px;
   width: 100%;
 }
 .col-xs-11 {
@@ -2164,7 +2180,7 @@ pre code {
     margin-left: 16.66666667%;
   }
   .col-md-offset-1 {
-    margin-left: 8.33333333%;
+    margin-left: 3.33333333%;
   }
   .col-md-offset-0 {
     margin-left: 0;
