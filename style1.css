@@ -51,12 +51,13 @@ body {
 
 /* Header */
 .header {
-    background-color: #5a2fd1;
     color: white;
+    background: linear-gradient(92deg, #4f36c8 33.57%, #dab5ff 115.88%);
     padding: 20px;
     text-align: left;
     width: 100%;
     position: relative;
+    height: 200px;
 }
 
 /* Course Path and Info */
@@ -167,17 +168,17 @@ h1 {
 }
 
 .career-growth li:nth-child(1)::before {
-    background-color: red;
+    background-color: rgb(255, 51, 40);
     color: white;
 }
 
 .career-growth li:nth-child(2)::before {
-    background-color: yellow;
+    background-color: rgb(255, 234, 72);
     color: white;
 }
 
 .career-growth li:nth-child(3)::before {
-    background-color: purple;
+    background-color: rgb(192, 51, 192);
     color: white;
 }
 
@@ -196,10 +197,12 @@ h1 {
     position: absolute;
     top: 20px;
     right: 20px;
-    width: 15%;
-    height: auto;
+    width: auto;
+    height: 80%;
     overflow: hidden;
     border-radius: 5px;
+    display: flex;
+    align-items: center;
 }
 
 .image-container img {
@@ -253,6 +256,10 @@ h1 {
 
 .image-placeholder {
     font-size: 20px;
+    margin-right: 10px;
+}
+
+.fa-heart , .fa-share {
     margin-right: 10px;
 }
 
@@ -343,6 +350,11 @@ h1 {
 
     .small-btn, .pro-btn {
         font-size: 12px;
+    }
+
+    .rating {
+        display: flex;
+        flex-direction: column;
     }
 
     .rating span {
