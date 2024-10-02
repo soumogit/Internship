@@ -58,7 +58,22 @@ body {
     width: 100%;
     position: relative;
 }
-
+.course-path {
+    font-size: 18px;
+    color: whitesmoke;
+  }
+  
+  .course-link {
+    text-decoration: none; /* Removes underline */
+    color: whitesmoke; /* Adds a link color */
+    font-weight: bold;
+  }
+  
+  .course-link:hover {
+    text-decoration: underline;
+    color: white; /* Darker blue on hover */
+  }
+  
 /* Course Path and Info */
 .course-path {
     font-size: 14px;
@@ -226,7 +241,7 @@ h1 {
 }
 .like-btn:hover {
     transform: scale(1.1); /* Increase size by 10% */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Add shadow */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Add shadow */
 }
 
 /* Change styles when liked */
@@ -267,6 +282,10 @@ h1 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
     padding: 20px; /* Padding inside the popup */
     z-index: 1000; /* Above other elements */
+    width: 400px; /* Set a specific width */
+    height: 180px; /* Fixed height */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    text-align: center; /* Center the text */
 }
 
 /* Overlay for dimming background */
@@ -287,9 +306,15 @@ h1 {
     color: white; /* White text */
     border: none; /* No border */
     border-radius: 5px; /* Rounded corners */
-    padding: 5px 10px; /* Padding */
+    padding: 10px; /* Padding */
     cursor: pointer; /* Pointer cursor */
+    
     transition: background-color 0.3s; /* Smooth transition */
+}
+.copy-btn{
+    margin-top: 10px; /* Space between the paragraph and button */
+    width: 90%; /* Full width */
+    height: auto;
 }
 
 .copy-btn:hover {
@@ -454,5 +479,19 @@ h1 {
 
     .rating span {
         font-size: 10px;
+    }
+    .popup {
+        width: 90%; /* Make the popup responsive */
+        height: auto; /* Allow height to adjust based on content */
+    }
+    .popup h3 {
+        font-size: 1.5em; /* Adjust font size for smaller screens */
+    }
+    .popup p {
+        font-size: 1em; /* Adjust font size for smaller screens */
+    }
+    .copy-btn {
+        width: 100%; /* Make buttons full-width for smaller screens */
+        margin: 5px 0; /* Add margin between buttons */
     }
 }
