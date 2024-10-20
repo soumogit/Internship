@@ -1,0 +1,64 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.course-page {
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.course-page-content {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.text-tagline {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.text-tagline h1 {
+  font-size: 70px;
+  line-height: 1.2;
+  color: rgb(58, 58, 58);
+}
+
+.text-tagline h1 span {
+  color: #55679c;
+}
+
+.course-page-image {
+  width: 50%;
+  height: 100%;
+}
+
+.course-page-image img {
+  width: 100%;
+}
+
+@media screen and (max-width : 579px) {
+  .course-page-content {
+    flex-direction: column;
+  }
+
+  .text-tagline {
+    width: 100%;
+    text-align: center;
+  }
+
+  .text-tagline h1 {
+    font-size: 40px;
+  }
+
+  .course-page-image {
+    width: 100%;
+  }
+}
