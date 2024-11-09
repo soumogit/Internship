@@ -152,10 +152,19 @@ a {
   .hero-section {
     flex-direction: column;
     text-align: center;
+    margin-top: 100px;
   }
 
   .hero-image {
     margin-top: 30px;
+  }
+
+  .preview-page {
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 }
 
@@ -176,7 +185,6 @@ a {
 .features-container {
   display: flex;
   flex-direction: column;
-  gap: 20px;
   padding: 20px;
   width: 100vw;
   height: fit-content;
@@ -252,8 +260,14 @@ a {
   color: #555;
 }
 
+.feature {
+  display: flex;
+  gap: 100px;
+}
+
 /* Responsiveness */
 @media (max-width: 768px) {
+
   .feature-content {
     width: 100%;
     padding: 0;
@@ -270,14 +284,16 @@ a {
   .feature {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     background-color: white;
-    padding: 20px;
+    padding: 0px 20px;
     border-radius: 10px;
     flex-direction: row;
     text-align: left;
     width: 100%;
     flex-direction: column-reverse;
+    margin-bottom: 50px;
+    gap: 0;
   }
 
   .feature-left {
@@ -286,7 +302,7 @@ a {
 
   .feature-text {
     margin-right: 0;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     width: 100%;
   }
 }
@@ -294,7 +310,7 @@ a {
 /* -------------- All you need to do... ---------------- */
 
 .ayntd-container {
-  max-width: 900px;
+  width: 100vw;
   margin: 50px auto;
   text-align: center;
   font-family: "Quicksand", sans-serif;
@@ -328,7 +344,7 @@ a {
 
 .step .content {
   padding: 0px 20px;
-  width: 100%;
+  width: 50%;
   height: 100%;
   text-align: left;
   border-left: 2px solid grey;
@@ -379,7 +395,7 @@ p {
 /* -------------- TESTIMONIALS --------------- */
 .slider-container {
   width: 100vw;
-  height: fit-content;
+  height: 80vh;
   position: relative;
   overflow: hidden;
   display: flex;
@@ -387,7 +403,6 @@ p {
   align-items: center;
   justify-content: center;
   background-color: #f6f6f6d0;
-  border: 2px solid red;
 }
 
 .slide-dot {
@@ -398,7 +413,6 @@ p {
   width: 50vw;
   position: relative;
   height: 50vh;
-  border: 2px solid yellow;
 }
 .slide {
   position: absolute;
@@ -469,4 +483,18 @@ p {
 }
 .dot.active {
   background-color: #717171;
+}
+
+@media (max-width: 768px) {
+  .slider-container {
+    height: 100vh;
+    padding: 0;
+    font-size: 14px;
+  }
+
+  .slider {
+    margin-top: 0;
+    width: 80vw;
+    height: 80vh;
+  }
 }
