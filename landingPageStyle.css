@@ -149,6 +149,11 @@ a {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  .navbar-brand a img{
+    width: 110px;
+    height: auto;
+  }
+
   .hero-section {
     flex-direction: column;
     text-align: center;
@@ -267,6 +272,18 @@ a {
 
 /* Responsiveness */
 @media (max-width: 768px) {
+  .nav-btn .explore-btn {
+    display: none;
+  }
+  
+  .nav-btn .register-btn {
+    border: 1px solid rgb(92, 92, 92);
+    border-radius: 4.8px;
+  }
+
+  .register-btn button {
+    color: rgb(92, 92, 92);
+  }
 
   .feature-content {
     width: 100%;
