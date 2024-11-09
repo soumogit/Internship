@@ -10,7 +10,9 @@ body {
   font-family: Arial, sans-serif;
   background-color: #ffffff;
 }
-
+html, body {
+  overflow-x: hidden;
+}
 .preview-page {
   width: 100vw;
   height: 100vh;
@@ -53,10 +55,6 @@ body {
   align-items: center;
 }
 
-a {
-  text-decoration: none;
-}
-
 .nav-btn {
   display: flex;
 }
@@ -70,7 +68,7 @@ a {
   margin-right: 5px;
   font-size: 16px;
   transition: all 0.2s;
-  border: 1px solid #ffffff;
+  border: 1px solid #e7e7e7;
   font-weight: 600;
   cursor: pointer;
   border-radius: 4px;
@@ -81,7 +79,7 @@ a {
   padding: 10px 25px;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
   background-color: #fff;
-  color: #96aae0;
+  color: #b9c5e6;
   margin-left: 10px;
   font-size: 16px;
   font-weight: 600;
@@ -89,11 +87,6 @@ a {
   cursor: pointer;
   border-radius: 4px;
   transition: all 0.5s ease; 
-}
-
-.explore-btn a {
-  color: #ffffff;
-  font-weight: 600;
 }
 
 .explore-btn button:hover, .register-btn button:hover {
@@ -282,45 +275,35 @@ a {
   max-width: 900px;
   margin: 50px auto;
   text-align: center;
-  font-family: 'Quicksand',sans-serif;
 }
 
-.container h1 {
+h1 {
   margin-bottom: 50px;
   font-size: 28px;
   font-weight: bold;
   color: #333;
-
 }
 
 .step {
-  width: 90%;
-  /* height: 200px; */
   display: flex;
   align-items: center;
+  margin-bottom: 40px;
   justify-content: space-between;
-  /* border: 2px solid red; */
-}
-
-.icon-container {
-  height: 100%;
 }
 
 .icon-container img {
-  width: 100%;
+  width: 80px;
+  height: 80px;
 }
 
-.step .content {
-  padding: 0px 20px;
-  width: 50%;
-  height: 100%;
+.content {
+  max-width: 500px;
   text-align: left;
-  border-left: 2px solid grey;
 }
 
 h2 {
   font-size: 24px;
-  color: #55679c;
+  color: #007BFF;
   margin-bottom: 10px;
 }
 
@@ -332,8 +315,6 @@ p {
 
 .step:nth-child(even) .content {
   text-align: right;
-  border-left: 2px solid transparent;
-  border-right: 2px solid grey;
 }
 
 .step:nth-child(even) {
