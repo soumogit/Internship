@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BackEnd</title>
+    <link rel="stylesheet" href="/Internship/CSS/style1.css" />
+    <link rel="stylesheet" href="/Internship/CSS/footer.css">
+
+    <!-- Include Font Awesome CDN -->
+    <script
+      src="https://kit.fontawesome.com/e2a5af85b3.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-content">
+        <div class="navbar-brand" id="logo">
+          <a href="/Internship/index.html"
+            ><img src="/Internship/assets/images/logo.png" alt="Skilledity"
+          /></a>
+        </div>
+      </div>
+    </nav>
+    <div class="header">
+        <div class="course-path"><a href="../index.html" class="course-link">Courses</a> > BackEnd</div>
+        <div class="course-info">
+            <h1>Software Tools <br> BackEnd</h1>
+            <div class="rating">
+                <span>⭐ 4.3</span>
+                <span>400+ Enrolled Learners</span>
+            </div>
+        </div>
+        <!-- Image container -->
+        <div class="image-container">
+            <img src="/Internship/assets/images/backend.png" alt="Course Image">
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="main-content">
+            <div class="content-column">
+                <div class="about-course white-box">
+                    <h2>About the Course</h2>
+                    <ul>
+                      <li>Understand backend architecture and server management with practical projects.</li>
+                      <li>Gain proficiency in languages like Node.js, Python, and databases like MySQL and MongoDB.</li>
+                      <li>Work on projects including REST APIs, database management, and more.</li>
+                      <li>Showcase strong backend skills on your resume with hands-on experience.</li>
+                      <li>Prepare for a successful career in Backend Development with a portfolio of projects.</li>
+                  </ul>
+                </div>
+                <div class="career-growth white-box">
+                    <h2 class="career-growth-title">Career Growth Prospects After Completing This Course</h2>
+                    <ul>
+                      <li>Master backend development concepts such as server-side programming, APIs, databases, and security, vital for a successful career in backend development.</li>
+                      <li>Build hands-on backend projects that help you implement real-world solutions and gain experience in building scalable and efficient systems.</li>
+                      <li>Prepare for backend development interviews with mock interviews focusing on algorithms, database management, and system design principles.</li>
+                      
+                    </ul>
+                </div>
+            </div>
+            <div class="side-content">
+                <div class="button-container">
+                  <button class="small-btn like-btn" id="likeButton" >
+                    <i class="fa-solid fa-heart"></i>
+                </button>
+                <button class="small-btn share-btn" onclick="showCourseLink()">
+                  <i class="fa-solid fa-share"></i>
+                </button>
+                <button class="small-btn register-btn" onclick="window.open('../Forms/index.html', '_blank')">Register</button>
+                </div>
+                <div class="space"></div> <!-- Added space after the button -->
+                <div class="key-takeaways">
+                    <h2>Key Takeaways</h2>
+                    <ul>
+                      <li><i class="fa-solid fa-industry image-placeholder"></i> Learn from Real-World Projects</li>
+                      <li><i class="fa-solid fa-diagram-project image-placeholder"></i> Industry-Aligned Project Experiences</li>
+                      <li><i class="fa-solid fa-file image-placeholder"></i>  Enhance Resume with Projects</li>
+                      <li><i class="fa-solid fa-certificate image-placeholder"></i> Project Completion Certification</li>
+                      <li><i class="fa-solid fa-user image-placeholder"></i> Personalized Project Guidance</li>
+                      <li><i class="fa-solid fa-clock image-placeholder"></i> Flexible Project Timeline </li>
+                      <li><i class="fa-solid fa-list-check image-placeholder"></i> Practical Hands-On Exercises</li>
+                      <li><i class="fa-solid fa-bag-shopping image-placeholder"></i> Unique, Industry-Led Project</li>
+                      <li><i class="fa-solid fa-film image-placeholder"></i>Industry-Recognized Project</li>
+                  </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-top">
+            <div class="footer-column">
+              <img
+                src="/Internship/assets/images/logo.png"
+                alt="skilledity-logo"
+                class="footer-logo"
+              />
+              <p class="footer-mission">
+                Our mission is to “develop the leaders of tomorrow by delivering
+                purposeful learning experiences.”
+              </p>
+            </div>
+            
+            <div class="footer-column">
+              <h3>ENTERPRISE SOLUTIONS</h3>
+              <ul>
+                <li><a href="#">Real-World Projects</a></li>
+                <li><a href="#">Industry-Driven Experience</a></li>
+                <li><a href="#">Skill Development with Impact</a></li>
+              </ul>
+            </div>
+            <div class="footer-column footer-social">
+              <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+          </div>
+          <div class="footer-bottom">
+             
+            <p>© 2024 SkilX. All rights reserved</p>
+          </div>
+        </div>
+      </footer>
+      <div class="overlay" id="overlay" onclick="closePopup()"></div>
+
+    <!-- Popup for displaying the link -->
+    <div class="popup" id="popup">
+        <h3>Course Page Link</h3>
+        <p id="courseLink">https://skilx.netlify.app/courses</p> <!-- Update with your course page link -->
+        <button class="copy-btn" onclick="copyToClipboard()">Copy Link</button>
+        <button class="copy-btn" onclick="closePopup()">Close</button>
+    </div>
+      <script src="/Internship/JS/popup.js"></script>
+    </body>
+  </html>
+

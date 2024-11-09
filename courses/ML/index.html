@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI/ML Course</title>
+    <link rel="stylesheet" href="/Internship/CSS/style1.css" />
+    <link rel="stylesheet" href="/Internship/CSS/footer.css">
+
+    <!-- Include Font Awesome CDN -->
+    <script
+      src="https://kit.fontawesome.com/e2a5af85b3.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-content">
+        <div class="navbar-brand" id="logo">
+          <a href="/Internship/index.html"
+            ><img src="/Internship/assets/images/logo.png" alt="Skilledity"
+          /></a>
+        </div>
+      </div>
+    </nav>
+    <div class="header">
+      <div class="course-path">
+        <a href="../index.html" class="course-link">Courses</a> > AI & Machine Learning
+      </div>
+      <div class="course-info">
+        <h1>
+          Software Tools <br />
+          AI & Machine LearningL
+        </h1>
+        <div class="rating">
+          <span>⭐ 4.3</span>
+         
+          <span>250+ Enrolled Learners</span>
+        </div>
+      </div>
+      <!-- Image container -->
+      <div class="image-container">
+        <img src="/Internship/assets/images/Machine Learning.png" alt="Course Image" />
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="main-content">
+        <div class="content-column">
+          <div class="about-course white-box">
+            <h2>About the Course</h2>
+            <ul>
+              <li>Gain practical knowledge in Machine Learning with projects in classification, clustering, and prediction.</li>
+              <li>Master tools like Scikit-learn, TensorFlow, and Keras.</li>
+              <li>Develop hands-on projects like sentiment analysis, recommendation systems, and more.</li>
+              <li>Enhance your resume with essential Machine Learning skills and project experience.</li>
+              <li>Prepare for a rewarding career in ML with a portfolio of real-world projects.</li>
+          </ul>
+          </div>
+          <div class="career-growth white-box">
+            <h2 class="career-growth-title">
+              Career Growth Prospects After Completing This Course
+            </h2>
+            <ul>
+              <li>Master machine learning concepts, algorithms, and models such as supervised learning, unsupervised learning, and neural networks, essential for success in ML roles.</li>
+              <li>Develop hands-on machine learning projects that will help you apply theoretical knowledge to real-world problems, making you job-ready.</li>
+              <li>Prepare for machine learning job interviews by practicing algorithm implementation, model evaluation, and optimization techniques commonly discussed in interviews.</li>
+
+            </ul>
+          </div>
+        </div>
+        <div class="side-content">
+          <div class="button-container">
+            <button class="small-btn like-btn" id="likeButton" >
+                <i class="fa-solid fa-heart"></i>
+            </button>
+            <button class="small-btn share-btn" onclick="showCourseLink()">
+              <i class="fa-solid fa-share"></i>
+            </button>
+            <button class="small-btn register-btn" onclick="window.open('../Forms/index.html', '_blank')">Register</button>
+          </div>
+          <div class="space"></div>
+          <!-- Added space after the button -->
+          <div class="key-takeaways">
+            <h2>Key Takeaways</h2>
+            <ul>
+              <li><i class="fa-solid fa-industry image-placeholder"></i> Learn from Real-World Projects</li>
+              <li><i class="fa-solid fa-diagram-project image-placeholder"></i> Industry-Aligned Project Experiences</li>
+              <li><i class="fa-solid fa-file image-placeholder"></i>  Enhance Resume with Projects</li>
+              <li><i class="fa-solid fa-certificate image-placeholder"></i> Project Completion Certification</li>
+              <li><i class="fa-solid fa-user image-placeholder"></i> Personalized Project Guidance</li>
+              <li><i class="fa-solid fa-clock image-placeholder"></i> Flexible Project Timeline </li>
+              <li><i class="fa-solid fa-list-check image-placeholder"></i> Practical Hands-On Exercises</li>
+              <li><i class="fa-solid fa-bag-shopping image-placeholder"></i> Unique, Industry-Led Project</li>
+              <li><i class="fa-solid fa-film image-placeholder"></i>Industry-Recognized Project</li>
+          </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-top">
+          <div class="footer-column">
+            <img
+              src="/Internship/assets/images/logo.png"
+              alt="skilledity-logo"
+              class="footer-logo"
+            />
+            <p class="footer-mission">
+              Our mission is to “develop the leaders of tomorrow by delivering
+              purposeful learning experiences.”
+            </p>
+          </div>
+          
+          <div class="footer-column">
+            <h3>ENTERPRISE SOLUTIONS</h3>
+              <ul>
+                <li><a href="#">Real-World Projects</a></li>
+                <li><a href="#">Industry-Driven Experience</a></li>
+                <li><a href="#">Skill Development with Impact</a></li>
+              </ul>
+          </div>
+          <div class="footer-column footer-social">
+            <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+           
+          <p>© 2024 Imarticus Learning. All rights reserved</p>
+        </div>
+      </div>
+    </footer>
+    <!-- Overlay for popup -->
+    <div class="overlay" id="overlay" onclick="closePopup()"></div>
+
+    <!-- Popup for displaying the link -->
+    <div class="popup" id="popup">
+        <h3>Course Page Link</h3>
+        <p id="courseLink">https://yourcoursepage.com</p> <!-- Update with your course page link -->
+        <button class="copy-btn" onclick="copyToClipboard()">Copy Link</button>
+        <button class="copy-btn" onclick="closePopup()">Close</button>
+    </div>
+    <script src="/Internship/JS/popup.js"></script>
+  </body>
+</html>
