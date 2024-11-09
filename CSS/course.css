@@ -53,8 +53,8 @@ body {
 }
 
 .navbar-brand {
-  height: 100%;
-  width: 20%;
+  height: 90%;
+  width: auto;
 }
 
 .navbar-brand img {
