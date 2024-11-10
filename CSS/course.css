@@ -54,11 +54,11 @@ body {
 
 .navbar-brand {
   height: 100%;
-  width: 20%;
+  width: auto;
 }
 
 .navbar-brand img {
-  height: 110%;
+  height: 100%;
   width: auto;
   align-items: center;
 }
